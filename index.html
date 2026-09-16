@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meliza Gabinete | My Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Meliza Gabinete</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="#studentForm">Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero text-white py-5">
+      <div class="container">
+        <div class="row align-items-center gx-4">
+
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <div class="hero-copy">
+              <h1 class="display-4 fw-bold text-white mb-3">Hello!</h1>
+              <h2 class="h4 mb-3">Welcome to my website</h2>
+              <p class="hero-text fs-5 mb-4">
+                I'm Meliza Gabinete, a fourth-year Computer Science student with a passion for
+                web design and development.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-light btn-lg" href="#studentForm">Start here</a>
+                <a class="btn btn-outline-light btn-lg" href="#about">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="card bg-light shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">Current focus</span>
+                <h5 class="card-title fw-bold fs-4">Computer Science</h5>
+                <p class="card-text">Web Development &bull; UI/UX &bull; Mobile Design</p>
+                <p id="studentSummary" class="card-text mb-0" aria-live="polite"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row gx-4 align-items-center">
+
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <article id="about" class="card shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="card-title fs-2 mb-3">About Me</h3>
+                <p class="card-text fs-5">
+                  My name is Meliza Gabinete, a 4th year Computer Science student from the
+                  University of Southern Mindanao. I am 20 years old.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <img src="assets/about-illustration.svg" alt="Open book beside a computer monitor"
+                 class="img-fluid shadow-sm">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- Interests                     -->
+    <!-- ============================= -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div id="interests" class="card shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title fs-2 mb-4">My Interests</h3>
+            <div class="row g-3">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <span class="badge bg-primary fs-6 p-3 w-100 text-wrap">Web Development</span>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <span class="badge bg-primary fs-6 p-3 w-100 text-wrap">UI/UX Design</span>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <span class="badge bg-primary fs-6 p-3 w-100 text-wrap">Mobile Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Welcome to the Student Information Form!</h4>
+            <p class="mb-0">Please fill out the form below with your personal and academic information.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+          <form id="studentForm" action="#" method="post" class="bg-white p-4 p-md-5 rounded shadow-sm" novalidate>
+            <fieldset class="mb-3">
+              <legend class="float-none w-auto fw-bold">Student Information</legend>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="fullName" class="form-label">Full Name:</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName"
+                         placeholder="Enter your full name" maxlength="50" required>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="email" class="form-label">Email Address:</label>
+                  <input type="email" class="form-control" id="email" name="email"
+                         placeholder="name@example.com" maxlength="254" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="password" class="form-label">Password:</label>
+                  <input type="password" class="form-control" id="password" name="password"
+                         placeholder="Enter your password" maxlength="20" required>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Password:</label>
+                  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                         placeholder="Re-enter your password" maxlength="20" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="age" class="form-label">Age:</label>
+                  <input type="number" class="form-control" id="age" name="age"
+                         placeholder="Enter your age" min="1" max="120" step="1" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                  <label for="dob" class="form-label">Date of Birth:</label>
+                  <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Gender:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" value="Male" id="genderMale" required>
+                  <label class="form-check-label" for="genderMale">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" value="Female" id="genderFemale">
+                  <label class="form-check-label" for="genderFemale">Female</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" value="Other" id="genderOther">
+                  <label class="form-check-label" for="genderOther">Other</label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Programming Languages:</label>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="languages" value="HTML" id="langHTML">
+                      <label class="form-check-label" for="langHTML">HTML</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="languages" value="CSS" id="langCSS">
+                      <label class="form-check-label" for="langCSS">CSS</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="languages" value="JavaScript" id="langJS">
+                      <label class="form-check-label" for="langJS">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="languages" value="Python" id="langPython">
+                      <label class="form-check-label" for="langPython">Python</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <label for="course" class="form-label">Course:</label>
+                  <select class="form-select" id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="BS in Information Technology">BS in Information Technology</option>
+                    <option value="BS in Computer Science">BS in Computer Science</option>
+                    <option value="BS in Accountancy">BS in Accountancy</option>
+                    <option value="BS in Business Administration">BS in Business Administration</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="comments" class="form-label">Comments:</label>
+                <textarea class="form-control" id="comments" name="comments" rows="4"
+                          placeholder="Write your comments here..."></textarea>
+              </div>
+
+              <div class="d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <button type="reset" class="btn btn-secondary btn-lg">Reset</button>
+              </div>
+              <div id="formMessage" class="alert mt-3 mb-0" role="alert" hidden></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="register" class="py-5 bg-white">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+          <h3 class="fs-2 mb-2">Register</h3>
+          <p class="text-muted mb-0">Create your account to get started.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+          <form id="registerForm" action="#" method="post" class="bg-light p-4 p-md-5 rounded shadow-sm" novalidate>
+            <div class="mb-3">
+              <label for="registerFullName" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="registerFullName" name="registerFullName"
+                     placeholder="Enter your full name" maxlength="50" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email Address:</label>
+              <input type="email" class="form-control" id="registerEmail" name="registerEmail"
+                     placeholder="name@example.com" maxlength="254" required>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="registerPassword" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="registerPassword" name="registerPassword"
+                       placeholder="Create a password" maxlength="20" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="registerConfirmPassword" class="form-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="registerConfirmPassword" name="registerConfirmPassword"
+                       placeholder="Re-enter your password" maxlength="20" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="registerAge" class="form-label">Age:</label>
+              <input type="number" class="form-control" id="registerAge" name="registerAge"
+                     placeholder="Enter your age" min="1" max="120" step="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <div id="registerMessage" class="alert mt-3 mb-0" role="alert" hidden></div>
+            <div id="registeredAccount" class="alert alert-secondary mt-3 mb-0" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resultsSection" class="py-5 bg-white" aria-live="polite">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h3 class="fs-2 mb-4">Submitted Data</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered shadow-sm" id="resultsTable" hidden>
+              <tbody id="resultsBody"></tbody>
+            </table>
+          </div>
+          <div id="noDataMessage" class="alert alert-secondary text-center">
+            <p class="mb-0">Form data will appear here after submission</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
+          <h6 class="fw-bold">About</h6>
+          <p class="small">A Computer Science student passionate about web design and development.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-md-0">
+          <h6 class="fw-bold">Contact</h6>
+          <p class="small">Email: meliza.gabinete@example.com<br>University of Southern Mindanao</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h6 class="fw-bold">Follow</h6>
+          <p class="small">
+            <a href="#" class="text-white text-decoration-none me-3">GitHub</a>
+          </p>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0 small">&copy; 2026 Meliza Gabinete</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
